@@ -130,12 +130,12 @@ resource "azurerm_virtual_machine" "vm02" {
     }
 }
 
-resource "azurerm_public_ip" "lbwilliam" {
+resource "azurerm_public_ip" "lb" {
     name                = "lb"
     location            = azurerm_resource_group.rg.location
     resource_group_name = azurerm_resource_group.rg.name
     allocation_method   = "Static"
-    domain_name_label   = "staticsitelbtf0001"
+    domain_name_label   = "staticsitelbtf0001-william"
 }
 
 resource "azurerm_lb" "lb" {
