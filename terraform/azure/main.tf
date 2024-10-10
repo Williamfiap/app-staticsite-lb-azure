@@ -130,7 +130,7 @@ resource "azurerm_virtual_machine" "vm02" {
     }
 }
 
-resource "azurerm_public_ip" "lb" {
+resource "azurerm_public_ip" "lbwilliam" {
     name                = "lb"
     location            = azurerm_resource_group.rg.location
     resource_group_name = azurerm_resource_group.rg.name
